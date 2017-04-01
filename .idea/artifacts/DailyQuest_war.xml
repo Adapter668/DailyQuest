@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="war" build-on-make="true" name="DailyQuest:war">
+    <output-path>$PROJECT_DIR$/target</output-path>
+    <root id="archive" name="DailyQuest.war">
+      <element id="artifact" artifact-name="DailyQuest:war exploded" />
+    </root>
+  </artifact>
+</component>
