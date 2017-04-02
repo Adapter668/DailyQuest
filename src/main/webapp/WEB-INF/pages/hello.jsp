@@ -1,3 +1,5 @@
+<%@ taglib prefix="spring" uri="http://www.springframework.org/tags"%>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -12,52 +14,13 @@
     <!-- Google font -->
     <link href="https://fonts.googleapis.com/css?family=Spirax" rel="stylesheet">
     <!-- Custom styles -->
-    <style>
-        html {
-            background: url(http://cdn.wallpapersafari.com/40/7/XAmkPK.jpg) no-repeat center center fixed;
-            -webkit-background-size: cover;
-            -moz-background-size: cover;
-            -o-background-size: cover;
-            background-size: cover;
-        }
-
-        body {
-            background-color: transparent;
-            font-family: 'Spirax', cursive;
-            font-size: 20px;
-        }
-
-        .title-box{
-            background-color: transparent;
-            text-align: center;
-            color: gold;
-        }
-
-        .title-box h1{
-            font-size: 5em;
-            font-weight: bold;
-            text-shadow: 0 0 20px #000;
-        }
-
-        button{
-            display: block;
-            font-size: 1.5em;
-            margin-top: 20px;
-            width: 100%;
-        }
-
-        .info-box{
-            background: rgba(0,0,0,0.75);
-            color: #cfcccb;
-            font-family: Book Antiqua;
-            border: none;
-        }
-    </style>
+    <spring:url value="/resources/css/main.css" var="mainCss" />
+    <link href="${mainCss}" rel="stylesheet" />
 </head>
 <body>
     <div class="container">
        <div class="jumbotron title-box">
-           <h1>${message}</h1>
+           <h1>Daily Quest</h1>
        </div>
         <div class="row">
             <div class="col-xs-12 col-md-6">
@@ -72,8 +35,8 @@
             </div>
 
             <div class="col-xs-12 col-md-4">
-                <button type="button" class="btn-default">Sign in</button>
-                <button type="button" class="btn-primary">Sign up</button>
+                <button type="button" class="btn-default" data-toggle="modal" data-target="#login-modal">Sign in</button>
+                <a href="register"> <button type="button" class="btn-primary">Sign up</button> </a>
             </div>
         </div>
     </div>
