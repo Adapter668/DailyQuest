@@ -16,7 +16,7 @@ public class RegisterController {
 
     @RequestMapping(method = RequestMethod.POST)
     public String submit(@RequestParam String name, @RequestParam String email, @RequestParam String pwd){
-        System.out.println(name + "\n" + email + "\n" + pwd);
+        System.out.println("Register:\n" + name + "\n" + email + "\n" + pwd);
         return "hello"; //TODO + encryption
     }
 }
