@@ -9,6 +9,10 @@ import org.springframework.web.bind.annotation.RequestParam;
 @Controller
 @RequestMapping("/login")
 public class LoginController {
+    @RequestMapping(method = RequestMethod.GET)
+    public String sendRegisterView(ModelMap model) {
+        return "hello";
+    }
 
     @RequestMapping(method = RequestMethod.POST)
     public String submitLogin(@RequestParam String name, @RequestParam String pwd){
