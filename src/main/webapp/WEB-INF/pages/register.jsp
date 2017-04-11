@@ -19,7 +19,6 @@
 </head>
 <body>
 <div class="container">
-
     <div class="page-header title-box">
         <h1>Join us</h1>
     </div>
