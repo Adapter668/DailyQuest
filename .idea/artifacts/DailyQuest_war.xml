@@ -3,6 +3,12 @@
     <output-path>$PROJECT_DIR$/target</output-path>
     <root id="archive" name="DailyQuest.war">
       <element id="artifact" artifact-name="DailyQuest:war exploded" />
+      <element id="directory" name="WEB-INF">
+        <element id="directory" name="lib">
+          <element id="library" level="project" name="ojdbc6-12.1.0.2" />
+          <element id="library" level="project" name="ojdbc6_g" />
+        </element>
+      </element>
     </root>
   </artifact>
 </component>
