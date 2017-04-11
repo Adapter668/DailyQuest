@@ -53,3 +53,9 @@ body {
     color: #cfcccb;
 }
 
+ .sidebar-button{
+     display: block;
+     background-color: transparent;
+     border: none;
+ }
+

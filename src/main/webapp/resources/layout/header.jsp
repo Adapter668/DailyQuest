@@ -2,6 +2,7 @@
     <nav class="navbar navbar-inverse app-nav">
         <div class="container">
             <div class="navbar-header">
+                <span class="btn sidebar-button" style="cursor:pointer" onclick="sidebarToggle()">&#9776; open</span>
                 <p>Hero: <br>
                     Level: </p>
             </div>
