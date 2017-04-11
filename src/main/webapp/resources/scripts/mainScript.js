@@ -1,7 +1,6 @@
 /**
  * Created by Monika on 2017-04-07.
  */
-
 var sidebarOpen = false;
 
 function openSidebar(){
