@@ -54,9 +54,8 @@ public class LoginController  {
         try {
             Connection conn = DriverManager.getConnection("jdbc:oracle:thin:@localhost:1521:XE", "SYSTEM", "Oracle2017");
             System.out.println("BAZA OTWARTA!!! \n \n \n");
-            boolean zalogowanoUzytkownika;
-            zalogowanoUzytkownika = logowanieUzytkownika(name, pwd, conn);
-            if(zalogowanoUzytkownika == true){
+            boolean zalogowanoUzytkownika = logowanieUzytkownika(name, pwd, conn);
+            if(zalogowanoUzytkownika){
                 System.out.println("Sukces!!! Zalogowano uzytkownika");
             }
             else{

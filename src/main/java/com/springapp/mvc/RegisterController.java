@@ -6,11 +6,17 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RequestParam;
 
+import javax.mail.Message;
+import javax.mail.Session;
+import javax.mail.Transport;
+import javax.mail.internet.InternetAddress;
+import javax.mail.internet.MimeMessage;
 import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.SQLException;
 import java.sql.* ;  // for standard JDBC programs
 import java.math.* ; // for BigDecimal and BigInteger support
+import java.util.Properties;
 
 /**
  * Kontroler dla strony z rejestracją
@@ -38,8 +44,41 @@ public class RegisterController {
     @RequestMapping(method = RequestMethod.POST)
     public String submit(@RequestParam String name, @RequestParam String email, @RequestParam String pwd){
         System.out.println("Register:\n" + name + "\n" + email + "\n" + pwd);
-        loadDataBase(name,email,pwd);
+        sendEmail(name, email, pwd);
+        //loadDataBase(name,email,pwd);
         return "hello"; //TODO + encryption
+    }
+
+    //TODO: activation link, when get and click then redirect to login/profile
+    public void sendEmail(String name, String email, String pwd) {
+        final String from = "dailyquestteam@gmail.com";
+        final String password = "DailyQuest123";
+
+        String host = "smtp.gmail.com";
+        Properties properties = new Properties();
+        properties.put("mail.smtp.auth", "true");
+        properties.put("mail.smtp.starttls.enable", "true");
+        properties.put("mail.smtp.host", host);
+        properties.put("mail.smtp.port", "587");
+        properties.put("mail.smtp.user", from);
+        properties.put("mail.smtp.password", password);
+
+        Session session = Session.getDefaultInstance(properties);
+        MimeMessage message = new MimeMessage(session);
+
+        try {
+            message.setFrom(new InternetAddress(from));
+            InternetAddress toAddress = new InternetAddress(email);
+            message.addRecipient(Message.RecipientType.TO, toAddress);
+            message.setSubject("DailyQuest Registration");
+            message.setText("Name: " + name + "\nPassword: " + pwd + "\nActivation link: ");
+            Transport transport = session.getTransport("smtp");
+            transport.connect(host, from, password);
+            transport.sendMessage(message, message.getAllRecipients());
+            transport.close();
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
     }
 
     /**
@@ -59,9 +98,8 @@ public class RegisterController {
         try {
             Connection conn = DriverManager.getConnection("jdbc:oracle:thin:@localhost:1521:XE", "SYSTEM", "Oracle2017");
             System.out.println("BAZA OTWARTA!!! \n \n \n");
-            boolean dodanoUzytkownika;
-            dodanoUzytkownika = rejestracjaUzytkownika(name, email, pwd, conn);
-            if(dodanoUzytkownika == true){
+            boolean dodanoUzytkownika = rejestracjaUzytkownika(name, email, pwd, conn);
+            if(dodanoUzytkownika){
                 System.out.println("Sukces!!! Dodano nowego uzytkownika");
             }
             else{
