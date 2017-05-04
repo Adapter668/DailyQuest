@@ -13,7 +13,7 @@
                     </a>
                 </li>
                 <li>
-                    <a href="#" title="Your account">
+                    <a href="/profile" title="Your account">
                         <span class="glyphicon glyphicon-user"></span>
                     </a>
                 </li>
