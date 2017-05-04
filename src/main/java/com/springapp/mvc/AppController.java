@@ -6,6 +6,8 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RequestParam;
 
+
+
 /**
  * Kontroler dla widoku aplikacji
  */
@@ -21,4 +23,5 @@ public class AppController {
     public String sendAppView(ModelMap model) {
         return "app";
     }
+
 }

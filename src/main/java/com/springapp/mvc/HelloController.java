@@ -22,4 +22,5 @@ public class HelloController {
 //		model.addAttribute("message", "Daily Quest");
 		return "hello";
 	}
+
 }
