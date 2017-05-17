@@ -5,10 +5,18 @@ import org.springframework.ui.ModelMap;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 
+/**
+ * Kontroler dla strony profilu
+ */
 @Controller
 @RequestMapping("/profile")
 public class ProfileController {
 
+    /**
+     * Zwraca widok strony profilu
+     * @param model model
+     * @return widok strony profilu
+     */
     @RequestMapping(method = RequestMethod.GET)
     public String sendProfileView(ModelMap model) {
 		model.addAttribute("userLogin", "JakisUser"); //TODO
