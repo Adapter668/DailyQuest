@@ -3,9 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="ef305b81-0db3-4f65-9fbc-5653565f873e" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/com/springapp/mvc/AppTests.java" afterPath="$PROJECT_DIR$/src/test/java/com/springapp/mvc/AppTests.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/com/springapp/mvc/ProfileControllerTest.java" afterPath="$PROJECT_DIR$/src/test/java/com/springapp/mvc/ProfileControllerTest.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/com/springapp/mvc/RegisterControllerTest.java" afterPath="$PROJECT_DIR$/src/test/java/com/springapp/mvc/RegisterControllerTest.java" />
     </list>
     <ignored path="$PROJECT_DIR$/target/" />
     <ignored path=".idea/dataSources.local.xml" />
@@ -1031,7 +1028,7 @@
       <workItem from="1494066299202" duration="84000" />
       <workItem from="1494763701086" duration="1361000" />
       <workItem from="1495015197432" duration="742000" />
-      <workItem from="1495021852304" duration="3195000" />
+      <workItem from="1495021852304" duration="3235000" />
     </task>
     <task id="LOCAL-00001" summary="Logowanie + rejestracja - wersja 1">
       <created>1491942621805</created>
@@ -1061,7 +1058,14 @@
       <option name="project" value="LOCAL" />
       <updated>1495022535818</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="changed to assertion in AppTests">
+      <created>1495025613936</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1495025613936</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -1088,7 +1092,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="45273000" />
+    <option name="totallyTimeSpent" value="45313000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1920" height="1044" extended-state="6" />
@@ -1114,7 +1118,7 @@
       <window_info id="Java Enterprise" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32972974" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.27675676" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.27675676" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Spring" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25026682" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
@@ -1151,7 +1155,8 @@
     <MESSAGE value="Sending email when register" />
     <MESSAGE value="test to profile" />
     <MESSAGE value="javadoc to profile" />
-    <option name="LAST_COMMIT_MESSAGE" value="javadoc to profile" />
+    <MESSAGE value="changed to assertion in AppTests" />
+    <option name="LAST_COMMIT_MESSAGE" value="changed to assertion in AppTests" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
