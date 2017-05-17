@@ -7,9 +7,7 @@ import org.springframework.ui.ModelMap;
 import static org.junit.Assert.*;
 import static org.mockito.Mockito.mock;
 
-/**
- * Created by adapter on 17.05.17.
- */
+
 public class ProfileControllerTest {
 
     private ProfileController profileController;
