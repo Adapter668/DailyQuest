@@ -29,7 +29,7 @@
       <sourceFolder url="file://$MODULE_DIR$/src/test/java" isTestSource="true" />
       <excludeFolder url="file://$MODULE_DIR$/target" />
     </content>
-    <orderEntry type="inheritedJdk" />
+    <orderEntry type="jdk" jdkName="1.8" jdkType="JavaSDK" />
     <orderEntry type="sourceFolder" forTests="false" />
     <orderEntry type="library" name="Maven: org.springframework:spring-core:3.2.0.RELEASE" level="project" />
     <orderEntry type="library" name="Maven: commons-logging:commons-logging:1.1.1" level="project" />
@@ -42,7 +42,7 @@
     <orderEntry type="library" scope="TEST" name="Maven: org.springframework:spring-test-mvc:1.0.0.M2" level="project" />
     <orderEntry type="library" scope="TEST" name="Maven: org.springframework:spring-test:3.2.0.RELEASE" level="project" />
     <orderEntry type="library" scope="TEST" name="Maven: junit:junit:4.8.2" level="project" />
-    <orderEntry type="library" scope="PROVIDED" name="Tomcat 7.0.76" level="application_server_libraries" />
+    <orderEntry type="library" scope="PROVIDED" name="Tomcat 8.0.38" level="application_server_libraries" />
     <orderEntry type="library" name="Spring-4.3.7.RELEASE" level="project" />
     <orderEntry type="library" name="Spring-4.3.7.RELEASE" level="project" />
     <orderEntry type="library" name="ojdbc6_g" level="project" />

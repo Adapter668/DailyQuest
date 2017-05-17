@@ -33,8 +33,8 @@ public class LoginController  {
     @RequestMapping(method = RequestMethod.POST)
     public String submitLogin(@RequestParam String name, @RequestParam String pwd){
         System.out.println("Login:\n" + name + "\n" + pwd);
-        loadDataBase(name,pwd);
-        return "hello"; //TODO: encryption, redirect to actual app page
+        //loadDataBase(name,pwd);
+        return "profile"; //TODO: encryption, redirect to actual app page
     }
 
 
